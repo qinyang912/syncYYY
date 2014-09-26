@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>index</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div id="div1" style="width:50px; height:30px; background-color:red;">
+			
+		</div>
+		<a id="link1" href="http://www.baidu.com">www.baidu.com</a>
+		<script src="./jquery.min.js"></script>
+		<script src="./syncYYY.js"></script>
+		<script>
+			$(function(){
+				$("#div1").click(function(e){
+					console.log("click div1");
+					e.stopPropagation();
+				});
+				$("#link1").click(function(e){
+					e.preventDefault();
+				});
+				$("body").click(function(e){
+					console.log("click body");
+				});
+			})
+		</script>
+	</body>
+</html>
