@@ -29,7 +29,6 @@
 		if(element == document || element == document.documentElement){
 			return 'html';
 		}
-
 		if(element == document.body){
 			return 'html>' + tagName;
 		}
