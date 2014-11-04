@@ -8,6 +8,8 @@
 		<div id="div1" style="width:50px; height:30px; background-color:red;">
 		</div>
 		<a id="link1" href="http://www.baidu.com">www.baidu.com</a>
+		<div id="div2" style="width:50px; height:30px; background-color:blue;"></div>
+		<input type="text" id="input" />
 		<script src="../client/jquery.min.js"></script>
 		<script src="../client/socket.io.js"></script>
 		<script src="../client/syncYYY.js"></script>
@@ -21,6 +23,18 @@
 				$("#link1").click(function(e){
 					e.preventDefault();
 				});
+				window.onload = function(e){
+					console.log(e);
+				}	
+				$("#div2").focus(function(e){
+					console.log(e);
+				})
+				// $("#input").focus(function(e){
+				// 	console.log(e);
+				// })
+				document.getElementById('input').addEventListener('focus',function(e){
+					console.log(e);
+				})
 			})
 		</script>
 	</body>
