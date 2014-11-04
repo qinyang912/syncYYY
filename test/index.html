@@ -5,11 +5,13 @@
 		<meta charset="utf-8" />
 	</head>
 	<body>
-		<div id="div1" style="width:50px; height:30px; background-color:red;">
-		</div>
+		<div id="div1" style="width:50px; height:30px; background-color:red;"></div>
 		<a id="link1" href="http://www.baidu.com">www.baidu.com</a>
 		<div id="div2" style="width:50px; height:30px; background-color:blue;"></div>
 		<input type="text" id="input" />
+		<div style="width:100px; height:100px; background:red;">sdfsdf
+		<span style="color:white;">asdfasfa</span>
+		</div>
 		<script src="../client/jquery.min.js"></script>
 		<script src="../client/socket.io.js"></script>
 		<script src="../client/syncYYY.js"></script>
@@ -20,9 +22,9 @@
 					console.log("div e %o",e);
 					e.stopPropagation();
 				});
-				$("#link1").click(function(e){
-					e.preventDefault();
-				});
+				// $("#link1").click(function(e){
+				// 	e.preventDefault();
+				// });
 				window.onload = function(e){
 					console.log(e);
 				}	

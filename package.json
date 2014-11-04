@@ -5,7 +5,7 @@
   "main": "./server/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"supervisor -i client test --debug ./server/app.js"
+    "start":"supervisor -i client test ./server/app.js"
   },
   "repository": {
     "type": "git",
